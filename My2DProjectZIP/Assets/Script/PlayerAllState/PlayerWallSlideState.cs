@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerWallSlideState : playerState
+{
+    public PlayerWallSlideState(player _player, playerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    {
+    }
+
+    public override void Enter()
+    {
+        base.Enter();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        { 
+            stateMachine.ChangeState(player.wallJumpState);
+            return;
+        }
+
+        if (yInput < 0)
+            player.SetVelocity(0, rb.velocity.y);
+        else
+            player.SetVelocity(0, rb.velocity.y * 0.7f);
+
+        if (xInput != 0 && xInput != player.facinDir)
+            stateMachine.ChangeState(player.runState);
+
+        if (player.IsGrounded())
+            stateMachine.ChangeState(player.runState);
+
+        if (!player.Iswalled() && !player.IsGrounded())
+            stateMachine.ChangeState(player.airState);
+
+    }
+
+}

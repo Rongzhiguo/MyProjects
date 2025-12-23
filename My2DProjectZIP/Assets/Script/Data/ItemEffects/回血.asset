@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a318c3649ae5e141be68f9ac3216d2a, type: 3}
+  m_Name: "\u56DE\u8840"
+  m_EditorClassIdentifier: 
+  effectDesc: "\u4F7F\u7528\u540E\u6062\u590D30%\u6700\u5927\u751F\u547D\u503C"
+  healPercent: 0.3

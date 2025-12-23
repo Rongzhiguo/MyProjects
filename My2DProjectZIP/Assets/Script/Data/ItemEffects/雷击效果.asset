@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59956b206cf081247a8fc328acb385eb, type: 3}
+  m_Name: "\u96F7\u51FB\u6548\u679C"
+  m_EditorClassIdentifier: 
+  effectDesc: "\u653B\u51FB\u9020\u6210\u96F7\u51FB\u4F24\u5BB3"
+  thunderStrikePrefab: {fileID: 2938912544079499037, guid: f41dd1b4826d80e4a9de61125a51bce7, type: 3}
